@@ -1,1 +1,2 @@
-serial project for windows
+serial project for windows, base on CSerialProject
+
