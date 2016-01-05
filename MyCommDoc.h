@@ -27,7 +27,7 @@
 #define XMODEM_BLOCK_CHK_SIZE       1
 
 
-const COMMANDCOUNT = 20; 
+const int COMMANDCOUNT = 20; 
 
 struct CommCommand {
 	CString m_strName;

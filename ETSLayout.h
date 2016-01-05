@@ -21,7 +21,7 @@
 //
 // DISCLAIMER:
 //
-// This Sourcecode and all accompaning material is ©1998-1999 Erwin Tratar. 
+// This Sourcecode and all accompaning material is ?998-1999 Erwin Tratar. 
 // All rights reserved.
 //
 // The source code may be used in compiled form in any way you desire 
@@ -270,7 +270,7 @@ public:
 		PaneBase* GetPaneBase()	{ return operator->(); }
 
 		bool IsValid()			{ return (m_pPaneHolder != 0); }
-		operator !()			{ return (m_pPaneHolder == 0); }
+		bool operator !()			{ return (m_pPaneHolder == 0); }
 
 	};
 

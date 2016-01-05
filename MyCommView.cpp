@@ -613,7 +613,6 @@ void CMyCommView::OnTimer(UINT nIDEvent)
 
 LONG CMyCommView::OnCommunication(WPARAM ch, LPARAM port)
 {
-	
 	if (m_IsViewReceiveData)
 	{
 		if (m_ctrlReceiveHex.GetCheck())
@@ -621,13 +620,10 @@ LONG CMyCommView::OnCommunication(WPARAM ch, LPARAM port)
 			CString str;
 			str.Format("%02X ",ch);
 			m_EditLogger.AddText(str);
-			
-		}
-		else{
+		} else {
 			CString str;
 			str.Format("%c",ch);
 			m_EditLogger.AddText(str);
-			
 		}
 		UpdateData(FALSE);
 	}
@@ -640,7 +636,6 @@ LONG CMyCommView::OnCommunication(WPARAM ch, LPARAM port)
 	
 	return 0;
 }
-
 
 void CMyCommView::OnSelchangeCbcommand() 
 {

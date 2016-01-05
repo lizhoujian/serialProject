@@ -19,7 +19,7 @@
 #include "EditLog.h"
 #include <malloc.h>		// for the _alloca() function
 
-const WM_ADDTEXT	= WM_USER + 500;
+const int WM_ADDTEXT	= WM_USER + 500;
 
 // Converts a UNICODE string to ANSI using the stack for buffering
 #define _W2A(lpw) ( (lpw == NULL ) ? NULL : _W2AHelp(lpw, (LPSTR) _alloca( wcslen( lpw ) + 1 ) ) )
